@@ -54,7 +54,6 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
   }
 
   String _extractText(String htmlText) {
-    // Eliminar etiquetas HTML básicas
     String text = htmlText.replaceAll(RegExp(r'<[^>]*>'), '');
     // Decodificar entidades HTML comunes
     text = text
@@ -74,7 +73,7 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Últimas Noticias'),
+        title: const Text('Ultimas Noticias'),
         centerTitle: true,
         actions: [
           IconButton(
@@ -160,7 +159,7 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
                                 ),
                                 const SizedBox(height: 10),
                                 const Text(
-                                  'Noticias de Tecnología',
+                                  'Noticias de Tecnologia',
                                   style: TextStyle(
                                     fontSize: 22,
                                     fontWeight: FontWeight.bold,
@@ -169,7 +168,7 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
                                 ),
                                 const SizedBox(height: 5),
                                 Text(
-                                  'Últimas ${_news.length} noticias',
+                                  'Ultimas ${_news.length} noticias',
                                   style: TextStyle(
                                     fontSize: 14,
                                     color: Colors.grey[600],
@@ -182,7 +181,7 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
 
                         final newsItem = _news[index - 1];
                         final title = _extractText(
-                          newsItem['title']?['rendered'] ?? 'Sin título',
+                          newsItem['title']?['rendered'] ?? 'Sin titulo',
                         );
                         final excerpt = _extractText(
                           newsItem['excerpt']?['rendered'] ?? '',
@@ -235,7 +234,7 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                'Artículo #${index}',
+                                                'Articulo #${index}',
                                                 style: TextStyle(
                                                   fontSize: 12,
                                                   color: Colors.grey[500],
@@ -301,7 +300,7 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
                                               Text(
-                                                'Leer más',
+                                                'Leer mas',
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 13,
@@ -344,7 +343,7 @@ class _NoticiasScreenState extends State<NoticiasScreen> {
     } else if (difference.inDays == 1) {
       return 'Ayer';
     } else if (difference.inDays < 7) {
-      return 'Hace ${difference.inDays} días';
+      return 'Hace ${difference.inDays} dias';
     } else {
       return '${date.day}/${date.month}/${date.year}';
     }

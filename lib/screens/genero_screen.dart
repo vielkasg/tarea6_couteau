@@ -77,7 +77,7 @@ class _GeneroScreenState extends State<GeneroScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Predicción de Género'),
+        title: const Text('Prediccion de Genero'),
         centerTitle: true,
       ),
       body: Container(
@@ -130,7 +130,7 @@ class _GeneroScreenState extends State<GeneroScreen> {
                       ),
                       const SizedBox(height: 20),
                       CustomButton(
-                        text: 'Predecir Género',
+                        text: 'Predecir Genero',
                         onPressed: _checkGender,
                         isLoading: _isLoading,
                         backgroundColor: _genderColor,

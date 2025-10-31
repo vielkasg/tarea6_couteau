@@ -28,7 +28,7 @@ class _PokemonScreenState extends State<PokemonScreen> {
   Future<void> _searchPokemon() async {
     if (_searchController.text.trim().isEmpty) {
       setState(() {
-        _error = 'Por favor, ingresa el nombre del Pok�mon';
+        _error = 'Por favor, ingresa el nombre del Pokemon';
         _pokemonData = null;
       });
       return;
@@ -48,7 +48,7 @@ class _PokemonScreenState extends State<PokemonScreen> {
       });
     } catch (e) {
       setState(() {
-        _error = 'Pok�mon no encontrado';
+        _error = 'Pokemon no encontrado';
         _isLoading = false;
       });
     }
@@ -96,7 +96,7 @@ class _PokemonScreenState extends State<PokemonScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Buscador de Pok�mon'),
+        title: const Text('Buscador de Pokemon'),
         centerTitle: true,
       ),
       body: Container(
@@ -140,7 +140,7 @@ class _PokemonScreenState extends State<PokemonScreen> {
                         controller: _searchController,
                         textCapitalization: TextCapitalization.none,
                         decoration: const InputDecoration(
-                          hintText: 'Nombre del Pok�mon (ej: pikachu)',
+                          hintText: 'Nombre del Pokemon (ej: pikachu)',
                           prefixIcon: Icon(
                             Icons.search,
                             color: Color(0xFFFF006E),
@@ -149,7 +149,7 @@ class _PokemonScreenState extends State<PokemonScreen> {
                       ),
                       const SizedBox(height: 20),
                       CustomButton(
-                        text: 'Buscar Pok�mon',
+                        text: 'Buscar Pokemon',
                         onPressed: _searchPokemon,
                         isLoading: _isLoading,
                         backgroundColor: const Color(0xFFFF006E),

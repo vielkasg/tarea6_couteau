@@ -53,13 +53,13 @@ class _EdadScreenState extends State<EdadScreen> {
     return 'Anciano';
   }
 
-  String get _ageEmoji {
-    if (_result == null || _result!['age'] == null) return 'S';
+  String get _ageImage {
+    if (_result == null || _result!['age'] == null) return 'assets/images/unknown.png';
     
     final age = _result!['age'] as int;
-    if (age <= 25) return '=v';
-    if (age <= 60) return '=h';
-    return '=t';
+    if (age <= 25) return 'assets/images/joven.png';
+    if (age <= 60) return 'assets/images/adulto.png';
+    return 'assets/images/anciano.png';
   }
 
   Color get _ageColor {
@@ -191,9 +191,11 @@ class _EdadScreenState extends State<EdadScreen> {
                             color: _ageColor.withOpacity(0.1),
                             shape: BoxShape.circle,
                           ),
-                          child: Text(
-                            _ageEmoji,
-                            style: const TextStyle(fontSize: 50),
+                         child: Image.asset(
+                          _ageImage,
+                          width: 80,
+                          height: 80,
+                          fit: BoxFit.contain,
                           ),
                         ),
                         const SizedBox(height: 20),
@@ -276,9 +278,9 @@ class _EdadScreenState extends State<EdadScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        _buildCategoryInfo('=v', 'Joven', '0-25 años', Colors.green),
-                        _buildCategoryInfo('=h', 'Adulto', '26-60 años', Colors.blue),
-                        _buildCategoryInfo('=t', 'Anciano', '60+ años', Colors.purple),
+                        _buildCategoryInfo('=j', 'Joven', '0-25 años', Colors.green),
+                        _buildCategoryInfo('=a', 'Adulto', '26-60 años', Colors.blue),
+                        _buildCategoryInfo('=v', 'Anciano', '60+ años', Colors.purple),
                       ],
                     ),
                   ),

@@ -84,7 +84,7 @@ class _ClimaScreenState extends State<ClimaScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Clima en República Dominicana'),
+        title: const Text('Clima en Republica Dominicana'),
         centerTitle: true,
       ),
       body: Container(
@@ -185,7 +185,7 @@ class _ClimaScreenState extends State<ClimaScreen> {
                                       ),
                                       const SizedBox(width: 5),
                                       Text(
-                                        'República Dominicana',
+                                        'Republica Dominicana',
                                         style: TextStyle(
                                           fontSize: 14,
                                           color: Colors.grey[600],
@@ -195,7 +195,7 @@ class _ClimaScreenState extends State<ClimaScreen> {
                                   ),
                                   const SizedBox(height: 30),
                                   Text(
-                                    '${_weatherData?['main']?['temp']?.toStringAsFixed(1) ?? '0'}°C',
+                                    '${_weatherData?['main']?['temp']?.toStringAsFixed(1) ?? '0'}C',
                                     style: TextStyle(
                                       fontSize: 60,
                                       fontWeight: FontWeight.bold,
@@ -212,7 +212,7 @@ class _ClimaScreenState extends State<ClimaScreen> {
                                   ),
                                   const SizedBox(height: 20),
                                   Text(
-                                    'Sensación térmica: ${_weatherData?['main']?['feels_like']?.toStringAsFixed(1) ?? '0'}°C',
+                                    'Sensacion termica: ${_weatherData?['main']?['feels_like']?.toStringAsFixed(1) ?? '0'}C',
                                     style: TextStyle(
                                       fontSize: 14,
                                       color: Colors.grey[600],
@@ -249,8 +249,8 @@ class _ClimaScreenState extends State<ClimaScreen> {
                                 Expanded(
                                   child: _buildInfoCard(
                                     icon: Icons.thermostat,
-                                    title: 'Mínima',
-                                    value: '${_weatherData?['main']?['temp_min']?.toStringAsFixed(1) ?? '0'}°C',
+                                    title: 'Minima',
+                                    value: '${_weatherData?['main']?['temp_min']?.toStringAsFixed(1) ?? '0'}C',
                                     color: Colors.cyan,
                                   ),
                                 ),
@@ -258,8 +258,8 @@ class _ClimaScreenState extends State<ClimaScreen> {
                                 Expanded(
                                   child: _buildInfoCard(
                                     icon: Icons.thermostat,
-                                    title: 'Máxima',
-                                    value: '${_weatherData?['main']?['temp_max']?.toStringAsFixed(1) ?? '0'}°C',
+                                    title: 'Maxima',
+                                    value: '${_weatherData?['main']?['temp_max']?.toStringAsFixed(1) ?? '0'}C',
                                     color: Colors.red,
                                   ),
                                 ),

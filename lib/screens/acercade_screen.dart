@@ -75,7 +75,7 @@ class AcercadeScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 20),
                       const Text(
-                        'Tu Nombre',
+                        'Vielka Sanchez',
                         style: TextStyle(
                           fontSize: 26,
                           fontWeight: FontWeight.bold,
@@ -84,7 +84,7 @@ class AcercadeScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 5),
                       const Text(
-                        'Desarrollador Flutter',
+                        'Estudiante de Software',
                         style: TextStyle(
                           fontSize: 16,
                           color: Color(0xFF3A86FF),
@@ -102,7 +102,7 @@ class AcercadeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: const Text(
-                          'Matrícula: 2022-0000',
+                          'Matricula: 2023-1754',
                           style: TextStyle(
                             fontSize: 14,
                             color: Color(0xFF3A86FF),
@@ -131,7 +131,7 @@ class AcercadeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        'Información de Contacto',
+                        'Informacion de Contacto',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -141,70 +141,18 @@ class AcercadeScreen extends StatelessWidget {
                       const SizedBox(height: 15),
                       _buildContactItem(
                         Icons.email,
-                        'tucorreo@ejemplo.com',
-                        () => _launchURL('mailto:tucorreo@ejemplo.com'),
+                        '20231754@itla.edu.do',
+                        () => _launchURL('mailto:20231754@itla.edu.do'),
                       ),
                       _buildContactItem(
                         Icons.phone,
-                        '+1 (829) 123-4567',
-                        () => _launchURL('tel:+18291234567'),
+                        '(849)-360-1140',
+                        () => _launchURL('tel:8493601140'),
                       ),
                       _buildContactItem(
                         Icons.location_on,
                         'Santo Domingo, RD',
                         null,
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 20),
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.1),
-                        blurRadius: 10,
-                        offset: const Offset(0, 5),
-                      ),
-                    ],
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
-                        'Redes Sociales',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xFF2C3E50),
-                        ),
-                      ),
-                      const SizedBox(height: 15),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          _buildSocialButton(
-                            Icons.link,
-                            'LinkedIn',
-                            const Color(0xFF0077B5),
-                            () => _launchURL('https://linkedin.com'),
-                          ),
-                          _buildSocialButton(
-                            Icons.code,
-                            'GitHub',
-                            const Color(0xFF333333),
-                            () => _launchURL('https://github.com'),
-                          ),
-                          _buildSocialButton(
-                            Icons.camera_alt,
-                            'Instagram',
-                            const Color(0xFFE4405F),
-                            () => _launchURL('https://instagram.com'),
-                          ),
-                        ],
                       ),
                     ],
                   ),
@@ -241,7 +189,7 @@ class AcercadeScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 10),
                       Text(
-                        'Caja de Herramientas es una aplicación multi-funcional que integra diversas APIs para proporcionar utilidades prácticas en una sola plataforma.',
+                        'Caja de Herramientas es una aplicacion multi-funcional que integra diversas APIs para proporcionar utilidades practicas en una sola plataforma.',
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.grey[700],
@@ -260,7 +208,7 @@ class AcercadeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(15),
                         ),
                         child: const Text(
-                          'Versión 1.0.0',
+                          'Version 1.0.0',
                           style: TextStyle(
                             fontSize: 12,
                             color: Color(0xFF3A86FF),

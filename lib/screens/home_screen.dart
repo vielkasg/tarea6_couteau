@@ -72,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                     mainAxisSpacing: 15,
                     children: [
                       ToolButton(
-                        title: 'Género',
+                        title: 'Genero',
                         icon: Icons.person_outline,
                         color: const Color(0xFF6C63FF),
                         onTap: () => Navigator.pushNamed(context, '/genero'),
@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                         onTap: () => Navigator.pushNamed(context, '/clima'),
                       ),
                       ToolButton(
-                        title: 'Pokémon',
+                        title: 'Pokemon',
                         icon: Icons.catching_pokemon,
                         color: const Color(0xFFFF006E),
                         onTap: () => Navigator.pushNamed(context, '/pokemon'),

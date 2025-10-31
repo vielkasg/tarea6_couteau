@@ -19,7 +19,7 @@ class _UniversidadScreenState extends State<UniversidadScreen> {
   Future<void> _searchUniversities() async {
     if (_countryController.text.trim().isEmpty) {
       setState(() {
-        _error = 'Por favor, ingresa un país en inglés';
+        _error = 'Por favor, ingresa un pais en ingles';
         _universities = [];
       });
       return;
@@ -37,7 +37,7 @@ class _UniversidadScreenState extends State<UniversidadScreen> {
         _universities = result;
         _isLoading = false;
         if (_universities.isEmpty) {
-          _error = 'No se encontraron universidades para este país';
+          _error = 'No se encontraron universidades para este pais';
         }
       });
     } catch (e) {
@@ -119,7 +119,7 @@ class _UniversidadScreenState extends State<UniversidadScreen> {
                         controller: _countryController,
                         textCapitalization: TextCapitalization.words,
                         decoration: const InputDecoration(
-                          hintText: 'País en inglés (ej: Dominican Republic)',
+                          hintText: 'Pais en ingles (ej: Dominican Republic)',
                           prefixIcon: Icon(
                             Icons.public,
                             color: Color(0xFF4ECDC4),
